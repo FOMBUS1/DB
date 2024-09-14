@@ -1,0 +1,10 @@
+C:\Users\mad-g\Source\Repos\DB\src\DB\bin\Debug\DB.exe.config
+C:\Users\mad-g\Source\Repos\DB\src\DB\bin\Debug\DB.exe
+C:\Users\mad-g\Source\Repos\DB\src\DB\bin\Debug\DB.pdb
+C:\Users\mad-g\Source\Repos\DB\src\DB\obj\Debug\DB.csproj.AssemblyReference.cache
+C:\Users\mad-g\Source\Repos\DB\src\DB\obj\Debug\DB.Form1.resources
+C:\Users\mad-g\Source\Repos\DB\src\DB\obj\Debug\DB.Properties.Resources.resources
+C:\Users\mad-g\Source\Repos\DB\src\DB\obj\Debug\DB.csproj.GenerateResource.cache
+C:\Users\mad-g\Source\Repos\DB\src\DB\obj\Debug\DB.csproj.CoreCompileInputs.cache
+C:\Users\mad-g\Source\Repos\DB\src\DB\obj\Debug\DB.exe
+C:\Users\mad-g\Source\Repos\DB\src\DB\obj\Debug\DB.pdb
