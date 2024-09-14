@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Doctors" msprop:Generator_RowEvHandlerName="DoctorsRowChangeEventHandler" msprop:Generator_RowDeletedName="DoctorsRowDeleted" msprop:Generator_RowDeletingName="DoctorsRowDeleting" msprop:Generator_RowEvArgName="DoctorsRowChangeEvent" msprop:Generator_TablePropName="Doctors" msprop:Generator_RowChangedName="DoctorsRowChanged" msprop:Generator_RowChangingName="DoctorsRowChanging" msprop:Generator_TableClassName="DoctorsDataTable" msprop:Generator_RowClassName="DoctorsRow" msprop:Generator_TableVarName="tableDoctors" msprop:Generator_UserTableName="Doctors">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DoctorID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnPropNameInRow="DoctorID" msprop:Generator_ColumnPropNameInTable="DoctorIDColumn" msprop:Generator_ColumnVarNameInTable="columnDoctorID" msprop:Generator_UserColumnName="DoctorID" type="xs:int" />
+              <xs:element name="FullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_UserColumnName="FullName" type="xs:string" />
+              <xs:element name="Birthday" msprop:Generator_ColumnPropNameInRow="Birthday" msprop:Generator_ColumnPropNameInTable="BirthdayColumn" msprop:Generator_ColumnVarNameInTable="columnBirthday" msprop:Generator_UserColumnName="Birthday" type="xs:dateTime" />
+              <xs:element name="DepartmentFK" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnPropNameInRow="DepartmentFK" msprop:Generator_ColumnPropNameInTable="DepartmentFKColumn" msprop:Generator_ColumnVarNameInTable="columnDepartmentFK" msprop:Generator_UserColumnName="DepartmentFK" type="xs:int" minOccurs="0" />
+              <xs:element name="JotTitleFK" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnPropNameInRow="JotTitleFK" msprop:Generator_ColumnPropNameInTable="JotTitleFKColumn" msprop:Generator_ColumnVarNameInTable="columnJotTitleFK" msprop:Generator_UserColumnName="JotTitleFK" type="xs:int" />
+              <xs:element name="PasportSeries" msprop:Generator_ColumnPropNameInTable="PasportSeriesColumn" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="PasportSeries" msprop:Generator_UserColumnName="PasportSeries" msprop:Generator_ColumnVarNameInTable="columnPasportSeries" type="xs:int" />
+              <xs:element name="PasportNumber" msprop:Generator_ColumnPropNameInRow="PasportNumber" msprop:Generator_ColumnPropNameInTable="PasportNumberColumn" msprop:Generator_ColumnVarNameInTable="columnPasportNumber" msprop:Generator_UserColumnName="PasportNumber" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Departments" msprop:Generator_RowEvHandlerName="DepartmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="DepartmentsRowDeleted" msprop:Generator_RowDeletingName="DepartmentsRowDeleting" msprop:Generator_RowEvArgName="DepartmentsRowChangeEvent" msprop:Generator_TablePropName="Departments" msprop:Generator_RowChangedName="DepartmentsRowChanged" msprop:Generator_RowChangingName="DepartmentsRowChanging" msprop:Generator_TableClassName="DepartmentsDataTable" msprop:Generator_RowClassName="DepartmentsRow" msprop:Generator_TableVarName="tableDepartments" msprop:Generator_UserTableName="Departments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DepartmentID" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnPropNameInRow="DepartmentID" msprop:Generator_ColumnPropNameInTable="DepartmentIDColumn" msprop:Generator_ColumnVarNameInTable="columnDepartmentID" msprop:Generator_UserColumnName="DepartmentID" type="xs:int" />
+              <xs:element name="DepartmentTitle" msprop:Generator_ColumnPropNameInRow="DepartmentTitle" msprop:Generator_ColumnPropNameInTable="DepartmentTitleColumn" msprop:Generator_ColumnVarNameInTable="columnDepartmentTitle" msprop:Generator_UserColumnName="DepartmentTitle" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="JobTitles" msprop:Generator_RowEvHandlerName="JobTitlesRowChangeEventHandler" msprop:Generator_RowDeletedName="JobTitlesRowDeleted" msprop:Generator_RowDeletingName="JobTitlesRowDeleting" msprop:Generator_RowEvArgName="JobTitlesRowChangeEvent" msprop:Generator_TablePropName="JobTitles" msprop:Generator_RowChangedName="JobTitlesRowChanged" msprop:Generator_RowChangingName="JobTitlesRowChanging" msprop:Generator_TableClassName="JobTitlesDataTable" msprop:Generator_RowClassName="JobTitlesRow" msprop:Generator_TableVarName="tableJobTitles" msprop:Generator_UserTableName="JobTitles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JobTitleID" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnPropNameInRow="JobTitleID" msprop:Generator_ColumnPropNameInTable="JobTitleIDColumn" msprop:Generator_ColumnVarNameInTable="columnJobTitleID" msprop:Generator_UserColumnName="JobTitleID" type="xs:int" />
+              <xs:element name="JotTitle" msprop:Generator_ColumnPropNameInRow="JotTitle" msprop:Generator_ColumnPropNameInTable="JotTitleColumn" msprop:Generator_ColumnVarNameInTable="columnJotTitle" msprop:Generator_UserColumnName="JotTitle" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Doctors" />
+      <xs:field xpath="mstns:DoctorID" />
+    </xs:unique>
+    <xs:unique name="DepartmentsKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Departments" />
+      <xs:field xpath="mstns:DepartmentID" />
+    </xs:unique>
+    <xs:unique name="JobTitlesKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:JobTitles" />
+      <xs:field xpath="mstns:JobTitleID" />
+    </xs:unique>
+    <xs:keyref name="FK_JobTitles_Doctors" refer="JobTitlesKey1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Doctors" />
+      <xs:field xpath="mstns:JotTitleFK" />
+    </xs:keyref>
+    <xs:keyref name="FK_Departments_Doctors" refer="DepartmentsKey1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Doctors" />
+      <xs:field xpath="mstns:DepartmentFK" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
