@@ -2,36 +2,27 @@
 <DataSet1 xmlns="http://tempuri.org/DataSet1.xsd">
   <Doctors>
     <DoctorID>1</DoctorID>
-    <FullName>Доктор</FullName>
-    <Birthday>2001-01-01T00:00:00+05:00</Birthday>
+    <FullName>Иванов Иван Петрович</FullName>
+    <Birthday>1978-02-01T00:00:00+05:00</Birthday>
     <DepartmentID>1</DepartmentID>
     <JotTitleID>1</JotTitleID>
-    <PasportSeries>1</PasportSeries>
-    <PasportNumber>1</PasportNumber>
+    <PasportSeries>1313</PasportSeries>
+    <PasportNumber>385812</PasportNumber>
   </Doctors>
   <Doctors>
     <DoctorID>2</DoctorID>
-    <FullName>тест</FullName>
-    <Birthday>1999-02-01T00:00:00+05:00</Birthday>
-    <DepartmentID>1</DepartmentID>
-    <JotTitleID>1</JotTitleID>
-    <PasportSeries>1</PasportSeries>
-    <PasportNumber>1</PasportNumber>
-  </Doctors>
-  <Doctors>
-    <DoctorID>3</DoctorID>
-    <FullName>Доктор А</FullName>
-    <Birthday>2008-02-01T00:00:00+05:00</Birthday>
-    <DepartmentID>1</DepartmentID>
-    <JotTitleID>3</JotTitleID>
-    <PasportSeries>1333</PasportSeries>
-    <PasportNumber>686300</PasportNumber>
+    <FullName>Толкачев Дмитрий Валерьевич</FullName>
+    <Birthday>1968-01-12T00:00:00+05:00</Birthday>
+    <DepartmentID>3</DepartmentID>
+    <JotTitleID>5</JotTitleID>
+    <PasportSeries>3849</PasportSeries>
+    <PasportNumber>301933</PasportNumber>
   </Doctors>
   <Appointments>
-    <AppointemtID>1</AppointemtID>
-    <DoctorFK>1</DoctorFK>
-    <PatientName>Пациент</PatientName>
-    <PatientBirthday>2005-01-01T00:00:00+05:00</PatientBirthday>
-    <Date>2025-02-01T00:00:00+05:00</Date>
+    <AppointemtID>3</AppointemtID>
+    <DoctorFK>2</DoctorFK>
+    <PatientName>Петров Валерий Генадьевич</PatientName>
+    <PatientBirthday>1999-09-22T00:00:00+06:00</PatientBirthday>
+    <Date>2024-09-25T00:00:00+05:00</Date>
   </Appointments>
 </DataSet1>
