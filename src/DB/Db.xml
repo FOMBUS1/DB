@@ -2,34 +2,36 @@
 <DataSet1 xmlns="http://tempuri.org/DataSet1.xsd">
   <Doctors>
     <DoctorID>1</DoctorID>
-    <FullName>Rob Vo</FullName>
-    <Birthday>1111-01-01T00:00:00+05:00</Birthday>
+    <FullName>Доктор</FullName>
+    <Birthday>2001-01-01T00:00:00+05:00</Birthday>
     <DepartmentID>1</DepartmentID>
     <JotTitleID>1</JotTitleID>
-    <PasportSeries>3819</PasportSeries>
-    <PasportNumber>19845</PasportNumber>
+    <PasportSeries>1</PasportSeries>
+    <PasportNumber>1</PasportNumber>
   </Doctors>
   <Doctors>
     <DoctorID>2</DoctorID>
-    <FullName>Robeo Goe</FullName>
-    <Birthday>1991-01-01T00:00:00+05:00</Birthday>
+    <FullName>тест</FullName>
+    <Birthday>1999-02-01T00:00:00+05:00</Birthday>
     <DepartmentID>1</DepartmentID>
     <JotTitleID>1</JotTitleID>
-    <PasportSeries>3819</PasportSeries>
-    <PasportNumber>19845</PasportNumber>
+    <PasportSeries>1</PasportSeries>
+    <PasportNumber>1</PasportNumber>
+  </Doctors>
+  <Doctors>
+    <DoctorID>3</DoctorID>
+    <FullName>Доктор А</FullName>
+    <Birthday>2008-02-01T00:00:00+05:00</Birthday>
+    <DepartmentID>1</DepartmentID>
+    <JotTitleID>3</JotTitleID>
+    <PasportSeries>1333</PasportSeries>
+    <PasportNumber>686300</PasportNumber>
   </Doctors>
   <Appointments>
     <AppointemtID>1</AppointemtID>
     <DoctorFK>1</DoctorFK>
-    <PatientName>Hue Jackman</PatientName>
-    <PatientBirthday>2015-12-01T00:00:00+05:00</PatientBirthday>
-    <Date>2024-09-21T20:08:27.9251871+05:00</Date>
-  </Appointments>
-  <Appointments>
-    <AppointemtID>2</AppointemtID>
-    <DoctorFK>1</DoctorFK>
-    <PatientName>Hue Jackman</PatientName>
-    <PatientBirthday>2015-12-01T00:00:00+05:00</PatientBirthday>
-    <Date>2024-09-21T20:08:52.874109+05:00</Date>
+    <PatientName>Пациент</PatientName>
+    <PatientBirthday>2005-01-01T00:00:00+05:00</PatientBirthday>
+    <Date>2025-02-01T00:00:00+05:00</Date>
   </Appointments>
 </DataSet1>
