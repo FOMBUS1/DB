@@ -14,10 +14,22 @@ namespace DB
     public partial class DoctorForm : Form
     {
         private DataSet1 dataSet;
-        public DoctorForm(DataSet1 _dataSet)
+        private int? inx;
+        public DoctorForm(DataSet1 _dataSet, int? index = null)
         {   
             dataSet = _dataSet;
             InitializeComponent();
+            if (index != null)
+            {
+                inx = (int)index;
+                object[] items = dataSet.Tables[0].Rows[(int)inx].ItemArray;
+                DoctorNameInput.Text = (string) items[1];
+                DoctorBirthdayInput.Text = Convert.ToString((DateTime)items[2]);
+                DepartmentInput.Text = Convert.ToString((int)items[3]);
+                JobTitleInput.Text = Convert.ToString((int)items[4]);
+                SeriesInput.Text = Convert.ToString((int)items[5]);
+                NumberInput.Text = Convert.ToString((int)items[6]);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,7 +40,14 @@ namespace DB
             int jobTitleID = Convert.ToInt32(JobTitleInput.Text);
             int passportSeries = Convert.ToInt32(SeriesInput.Text);
             int passportNumber = Convert.ToInt32(NumberInput.Text);
-            AddDoctor(DoctorNameInput.Text, birthday, departmentID, jobTitleID, passportSeries, passportNumber);
+            if (inx == null)
+            {
+                AddDoctor(DoctorNameInput.Text, birthday, departmentID, jobTitleID, passportSeries, passportNumber);
+            }
+            else
+            {
+                EditDoctor(DoctorNameInput.Text, birthday, departmentID, jobTitleID, passportSeries, passportNumber);
+            }
             dataSet.WriteXml("C:\\Users\\krivo\\source\\repos\\DB\\src\\DB\\Db.xml");
             this.Close();
         }
@@ -61,32 +80,25 @@ namespace DB
             DateTime date = new DateTime(year, month, day);
             return date;
         }
-        /*public void EditDoctor(
-                                    int doctorID,
-                                    string? fullName = null,
-                                    DateTime? birthDay = null,
-                                    int? departmentID = null,
-                                    int? jobTitleID = null,
-                                    int? pasportSeries = null,
-                                    int? pasportNumber = null
+
+        public void EditDoctor(
+                                    string fullName,
+                                    DateTime birthDay,
+                                    int departmentID,
+                                    int jobTitleID,
+                                    int pasportSeries,
+                                    int pasportNumber
                                 )
         {
-            DataRow row = dataSet.Doctors.Rows.Find(doctorID);
-
-            row.ItemArray = new object[] { null, fullName, birthDay, departmentID, jobTitleID, pasportSeries, pasportNumber };
-
+            DataRow row = dataSet.Tables[0].Rows[(int)inx];
+            if (row != null ) 
+            {
+                row.ItemArray = new object[] { inx, fullName, birthDay, departmentID, jobTitleID, pasportSeries, pasportNumber };
+            }
+            else
+            {
+                MessageBox.Show("Что-то пошло не так!");
+            }
         }
-
-        public void EditAppointment(
-                                        int appoitmentID,
-                                        int? doctorFK = null,
-                                        string? patientName = null,
-                                        DateTime? birthDay = null,
-                                        DateTime? date = null
-                                    )
-        {
-            DataRow row = dataSet.Appointments.Rows.Find(appoitmentID);
-            row.ItemArray = new object[] { null, doctorFK, patientName, birthDay, date };
-        }*/
     }
 }

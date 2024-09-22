@@ -95,9 +95,10 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(10, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 13);
+            this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Дата рождения";
+            this.label2.Text = "Дата встречи";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // dateInput
             // 
@@ -133,7 +134,7 @@
             this.Controls.Add(this.DoctorFKInput);
             this.Controls.Add(this.DoctorFK);
             this.Name = "AppointmentForm";
-            this.Text = "AppointmentForm";
+            this.Text = "Создать встречу";
             this.ResumeLayout(false);
             this.PerformLayout();
 

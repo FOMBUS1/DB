@@ -19,3 +19,4 @@ C:\Users\krivo\source\repos\DB\src\DB\obj\Debug\DB.csproj.CoreCompileInputs.cach
 C:\Users\krivo\source\repos\DB\src\DB\obj\Debug\DB.exe
 C:\Users\krivo\source\repos\DB\src\DB\obj\Debug\DB.pdb
 C:\Users\krivo\source\repos\DB\src\DB\obj\Debug\DB.DoctorForm.resources
+C:\Users\krivo\source\repos\DB\src\DB\obj\Debug\DB.AppointmentForm.resources
