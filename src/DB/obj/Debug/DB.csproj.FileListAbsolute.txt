@@ -18,3 +18,4 @@ C:\Users\krivo\source\repos\DB\src\DB\obj\Debug\DB.csproj.GenerateResource.cache
 C:\Users\krivo\source\repos\DB\src\DB\obj\Debug\DB.csproj.CoreCompileInputs.cache
 C:\Users\krivo\source\repos\DB\src\DB\obj\Debug\DB.exe
 C:\Users\krivo\source\repos\DB\src\DB\obj\Debug\DB.pdb
+C:\Users\krivo\source\repos\DB\src\DB\obj\Debug\DB.DoctorForm.resources
